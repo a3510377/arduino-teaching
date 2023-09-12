@@ -1,0 +1,24 @@
+{
+  "name": "arduino-teaching",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/a3510377/arduino-teaching.git",
+  "author": "a3510377 <a102009102009@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext js,md,vue",
+    "dev": "vuepress dev book",
+    "build": "NODE_ENV=production vuepress build book"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/eslint-parser": "^7.22.15",
+    "eslint": "^8.49.0",
+    "eslint-config-sora": "^3.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "vuepress-vite": "^2.0.0-beta.45"
+  },
+  "dependencies": {}
+}
