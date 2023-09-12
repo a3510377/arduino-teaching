@@ -1,7 +1,5 @@
 import { defineUserConfig } from "vuepress-vite";
 
-import theme from "./theme";
-
 export default defineUserConfig({
   title: "Arduino 教學",
   description: "2023年 Arduino 教學",
@@ -26,6 +24,5 @@ export default defineUserConfig({
     ["meta", { property: "og:url", content: "" }],
     ["meta", { property: "og:locale", content: "zh_TW" }],
   ],
-  theme,
   plugins: [],
 });
