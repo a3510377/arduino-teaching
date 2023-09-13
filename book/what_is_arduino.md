@@ -12,8 +12,6 @@ Arduino 有這大量的社群開發經驗，代表了他有大量的第三方函
 
 Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開發版，最常用的開發板不外乎 `Arduino Uno`、`Arduino Nano` 及 `Arduino Mega` 等。
 
-> 以下數據參考 [Arduino Hardware](https://www.arduino.cc/en/hardware)
-
 ### [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
 
 新手最常使用的 Arduino 開發版，有 14 個 digital I/O (數位 I/O)引腳，其中有 6 個 PWM digital I/O 接腳，並有 6 個 analog I/O 接腳，可以滿足大部分測試及開發需求。
@@ -73,3 +71,11 @@ Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開
 ## 正版 & 副廠
 
 市面上看到的板子，絕大多數都是副廠的，也應為這樣大幅的降低了入門的門檻(錢錢不夠深 😦)，副廠和正版的板子基本沒有太大的差別，不過有些副廠的板子由於使用和正版不同的 USB 轉換 IC，在安裝 Arduino IDE 時不會自動安裝該驅動，需要自行安裝驅動，驅動安裝方法可以在[這邊](./setup.md)看到。
+
+---
+
+::: details 參考資料
+
+1. [Arduino Hardware](https://www.arduino.cc/en/hardware)
+
+:::
