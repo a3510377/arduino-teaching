@@ -1,4 +1,6 @@
-import { defineUserConfig } from "vuepress-vite";
+import { defaultTheme, defineUserConfig } from "vuepress-vite";
+
+import sidebar from "./sidebar";
 
 export default defineUserConfig({
   title: "Arduino 教學",
@@ -24,5 +26,5 @@ export default defineUserConfig({
     ["meta", { property: "og:url", content: "" }],
     ["meta", { property: "og:locale", content: "zh_TW" }],
   ],
-  plugins: [],
+  theme: defaultTheme({ sidebar }),
 });
