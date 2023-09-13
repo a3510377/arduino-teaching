@@ -14,23 +14,66 @@ Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開
 
 > 以下數據參考 [Arduino Hardware](https://www.arduino.cc/en/hardware)
 
-### Arduino Uno
+### [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
 
 新手最常使用的 Arduino 開發版，有 14 個 digital I/O (數位 I/O)引腳，其中有 6 個 PWM digital I/O 接腳，並有 6 個 analog I/O 接腳，可以滿足大部分測試及開發需求。
 
+| 類型                | 參數                                |
+| ------------------- | ----------------------------------- |
+| Microcontroller     | ATmega328P                          |
+| Digital I/O Pins    | 14 (of which 6 provide PWM output)  |
+| PWM Pins            | 6 (3, 5, 6, 9, 10, 11)              |
+| Analog Input Pins   | 6                                   |
+| EEPROM              | 1 KB (ATmega328P)                   |
+| External Interrupts | 2, 3 (use attachInterrupt function) |
+
+::: details 腳位說明及外觀
+<br />
 <img src="./images/arduino_uno.png" width="600" alt="Arduino Uno">
 <img src="./images/arduino_uno_pins.png" width="600" alt="Arduino Uno Pins">
+:::
 
-### Arduino Nano Every
+### [Arduino Nano Every](https://store.arduino.cc/products/arduino-nano-every)
 
 比 Arduino Uno 的體積還小，能夠壓縮更多的硬體體積(若需要更小的體積可以直接使用 Arduino Nano 的底層 IC (ATMega4809) 或者其它 IC)。
 
-| 類型              | 參數                    |
-| ----------------- | ----------------------- |
-| Microcontroller   | ATMega4809 (datasheet)  |
-| EEPROM            | 256byte (ATMega4809)    |
-| PWM Pins          | 5 (D3, D5, D6, D9, D10) |
-| Analog Input Pins | 8 (ADC 10 bit)          |
+| 類型                | 參數                    |
+| ------------------- | ----------------------- |
+| Microcontroller     | ATMega4809              |
+| PWM Pins            | 5 (D3, D5, D6, D9, D10) |
+| Analog Input Pins   | 8 (ADC 10 bit)          |
+| EEPROM              | 256byte (ATMega4809)    |
+| External Interrupts | All digital pins        |
 
+::: details 腳位說明及外觀
+<br />
 <img src="./images/arduino_nano.png" width="600" alt="Arduino Nano Every">
 <img src="./images/arduino_nano_pins.png" width="600" alt="Arduino Nano Every Pins">
+:::
+
+### [Arduino Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)
+
+覺得原本的開發版腳位不夠了?可以試試 `Arduino Mega 2560`，添加了更多的接腳，其它部分基本除了大一點和貴一點和 Arduino Uno 版並無太大的差別。
+
+| 類型                | 參數                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------- |
+| Microcontroller     | ATmega2560                                                                                               |
+| Digital I/O Pins    | 54 (of which 15 provide PWM output)                                                                      |
+| PWM Pins            | 15 (2 to 13 and 44 to 46)                                                                                |
+| Analog Input Pins   | 16                                                                                                       |
+| EEPROM              | 4 KB                                                                                                     |
+| External Interrupts | 2 (interrupt 0), 3 (interrupt 1), 18 (interrupt 5), 19 (interrupt 4), 20 (interrupt 3), 21 (interrupt 2) |
+
+::: details 腳位說明及外觀
+<br />
+<img src="./images/arduino_mega_2560.png" width="600" alt="Arduino Mega 2560">
+<img src="./images/arduino_mega_2560_pins.png" width="600" alt="Arduino Mega 2560 Pins">
+:::
+
+## 正版 & 副廠
+
+市面上看到的板子，絕大多數都是副廠的，也應為這樣大幅的降低了入門的門檻(錢錢不夠深 😦)，副廠和正版的板子基本沒有太大的差別，不過有些副廠的板子由於使用和正版不同的 USB 轉換 IC，在安裝 Arduino IDE 時不會自動安裝該驅動，需要自行安裝驅動
+
+### 如何安裝驅動
+
+<!-- [CH340](https://www.wch.cn/products/CH340.html) -->
