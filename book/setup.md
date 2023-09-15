@@ -8,7 +8,7 @@
 
 Arduino 官方有出自己的 IDEA 提供給使用者使用，[下載連結](https://www.arduino.cc/en/software)。我們點開後往下滑可以看到 `Arduino IDE 某某某版本`，我推薦下載 2.x.x 以上版本，如果你不太熟悉 Arduino 所提供的函數或是
 
-![Alt text](images/setup/arduino_downloads.png)
+![Arduino Downloads](images/setup/arduino_downloads.png)
 
 ## 如何安裝副廠驅動
 
