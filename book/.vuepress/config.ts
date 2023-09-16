@@ -3,6 +3,7 @@ import { defaultTheme, defineUserConfig } from "vuepress-vite";
 import sidebar from "./sidebar";
 
 export default defineUserConfig({
+  base: process.env.BASE_URL as "/" | `/${string}/`,
   title: "Arduino 教學",
   description: "2023年 Arduino 教學",
   head: [

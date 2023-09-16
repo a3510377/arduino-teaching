@@ -6,7 +6,7 @@
 
 整合開發環境(IDE)是甚麼?整合開發環境是一種輔助程式開發人員開發軟體的應用軟體，在開發工具內部就可以輔助編寫原始碼文字、並編譯打包成為可用的程式，有些甚至可以設計圖形介面。 IDE通常包括程式語言編輯器、自動構建工具、通常還包括除錯器。
 
-Arduino 官方有出自己的 IDEA 提供給使用者使用，[下載連結](https://www.arduino.cc/en/software)。我們點開後往下滑可以看到 `Arduino IDE 某某某版本`，我推薦下載 2.x.x 以上版本，如果你不太熟悉 Arduino 所提供的函數或是
+Arduino 官方有出自己的 IDEA 提供給使用者使用，[下載連結](https://www.arduino.cc/en/software)。我們點開後往下滑可以看到 `Arduino IDE 某某某版本`，我推薦下載 2.x.x 以上版本，如果你不太熟悉 Arduino 所提供的函數或是記性不太好的可以在這個版本中使用自動補全，可以大大的加速程式的開發時間。
 
 ![Arduino Downloads](images/setup/arduino_downloads.png)
 
