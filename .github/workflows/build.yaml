@@ -35,9 +35,9 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node.js v18.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: 18
 
       - name: Install
         run: yarn install
