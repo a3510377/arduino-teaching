@@ -1,0 +1,35 @@
+:root {
+  --code-ln-wrapper-width: 2.5rem;
+}
+
+// ::: details
+.custom-container.details {
+  padding: 1em 1.2em;
+  --navbar-height: 3px;
+}
+
+// `>`
+blockquote {
+  ul,
+  ol {
+    margin: 0;
+  }
+}
+
+// `-` or `1.`
+ul,
+ol {
+  margin: 10px 0 5px;
+}
+
+// `code`
+code {
+  padding: 0.25rem 0.4rem;
+}
+
+// `codes`
+div[class*="language-"].line-numbers-mode .line-numbers .line-number {
+  &::before {
+    margin-right: -15px;
+  }
+}
