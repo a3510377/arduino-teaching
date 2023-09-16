@@ -8,15 +8,28 @@ on:
 env:
   VITE_BASE: /arduino-teaching/
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           # fetch all commits to get last updated time or other git log info
           fetch-depth: 0
@@ -34,20 +47,15 @@ jobs:
         env:
           BASE_URL: ${{ env.VITE_BASE }}
 
-      - name: deploy
-        run: |
-          cd book/.vuepress/dist
-          [ -f 404.html ] || ln -s index.html 404.html
-          if [ "none" !=  "$cname" ]; then echo "$cname" > CNAME; fi
-          git config --global user.name "$user_name"
-          git config --global user.email "$user_email"
-          git init
-          git add -A
-          git commit -m "${{ github.event.head_commit.message }}"
-          git push -f https://_:"$token"@github.com/${{ github.event.repository.full_name }}.git master:gh-pages
-        shell: bash
-        env:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user_name: GitHub Action
-          user_email: action@github.com
-          cname: none
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: book/.vuepress/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
