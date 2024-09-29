@@ -1,12 +1,3 @@
-// :::
-.vp-meta-item.git-info {
-  width: 100%;
-  display: flex;
-  color: #8b9eb0;
-  font-weight: 500;
-  justify-content: space-between;
-}
-
 // ::: details
 .hint-container.details {
   h4 {
@@ -85,18 +76,33 @@ div[class*="language-"].line-numbers-mode .line-number::before {
 
 .vp-page-meta {
   cursor: default;
+  display: flex;
+  align-items: flex-end;
 
   &:not(:last-child) {
     padding-bottom: 1rem !important;
   }
 
   .vp-meta-item {
-    flex-grow: unset;
+    flex-grow: 0;
   }
 
   .last-updated .meta-item-info,
   .contributors .meta-item-info {
     color: var(--vp-c-grey-text);
+  }
+
+  .git-info {
+    font-weight: 500;
+    color: #8b9eb0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &:not(.edit-link ~ .git-info) {
+      width: 100%;
+      flex-direction: initial;
+      justify-content: space-between;
+    }
   }
 }
 

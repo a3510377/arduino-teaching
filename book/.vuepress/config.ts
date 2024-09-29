@@ -34,6 +34,10 @@ export default defineUserConfig({
   bundler: viteBundler(),
   theme: defaultTheme({
     sidebar,
+    docsRepo: "https://github.com/a3510377/arduino-teaching",
+    docsDir: "book",
+    editLinkText: "在 GitHub 上編輯此頁面",
+    editLink: true,
     contributorsText: "貢獻者",
     lastUpdatedText: "更新日期",
   }),
