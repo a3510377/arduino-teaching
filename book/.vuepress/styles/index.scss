@@ -100,6 +100,15 @@ div[class*="language-"].line-numbers-mode .line-number::before {
   }
 }
 
-[data-theme="dark"] {
-  --vp-c-gutter: #5f5b5b;
+:root {
+  --code-c-bg: #eff1f5 !important;
+  --code-c-line-number: #5f5b5b !important;
+  --code-c-highlight-bg: #8e96aa88 !important;
+
+  &[data-theme="dark"] {
+    --vp-c-gutter: #5f5b5b !important;
+    --code-c-bg: #2e3440 !important;
+    --code-c-line-number: #919397 !important;
+    --code-c-highlight-bg: #8e96aa57 !important;
+  }
 }

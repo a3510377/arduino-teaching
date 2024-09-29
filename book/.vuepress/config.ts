@@ -1,5 +1,6 @@
 import { defaultTheme } from "@vuepress/theme-default";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { defineUserConfig } from "vuepress";
 
 import sidebar from "./sidebar";
@@ -39,6 +40,13 @@ export default defineUserConfig({
   plugins: [
     sitemapPlugin({
       hostname: process.env.HOSTNAME ?? "",
+    }),
+    shikiPlugin({
+      langs: ["c", "cpp", "diff"],
+      themes: {
+        dark: "one-dark-pro",
+        light: "catppuccin-latte",
+      },
     }),
   ],
 });
