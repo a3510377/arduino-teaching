@@ -4,11 +4,11 @@ export default {
   "/": [
     {
       text: "概述",
-      children: ["/what_is_arduino/README.md", "/setup/README.md"],
+      children: ["/what_is_arduino/", "/setup/"],
     },
     {
       text: "創建你的 Arduino",
-      children: ["/creating-your-arduino/README.md"],
+      children: ["/creating-your-arduino/"],
     },
   ],
 } as SidebarOptions;

@@ -55,19 +55,26 @@ div[class*="language-"].line-numbers-mode .line-number::before {
   }
 
   .vp-page-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-top: 1rem !important;
+
+    @media (max-width: 935px) {
+      grid-template-columns: unset;
+    }
+    @media (max-width: 719px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 615px) {
+      grid-template-columns: unset;
+    }
+
+    .next {
+      grid-column: 2/-1;
+    }
 
     .route-link {
       padding: 0.5rem 1.5rem;
-    }
-
-    .hint {
-      display: flex;
-      align-items: center;
-
-      .arrow {
-        margin-right: 5px;
-      }
     }
 
     .link {
