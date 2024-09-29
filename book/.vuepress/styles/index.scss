@@ -14,8 +14,7 @@
     }
   }
 
-  > ol:last-child,
-  > ul:last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 }
