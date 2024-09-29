@@ -1,3 +1,12 @@
+// :::
+.vp-meta-item.git-info {
+  width: 100%;
+  display: flex;
+  color: #8b9eb0;
+  font-weight: 500;
+  justify-content: space-between;
+}
+
 // ::: details
 .hint-container.details {
   h4 {
@@ -24,33 +33,13 @@ div[class*="language-"].line-numbers-mode .line-number::before {
   margin-right: -15px;
 }
 
-.vp-meta-item.git-info {
-  width: 100%;
-  display: flex;
-  color: #8b9eb0;
-  font-weight: 500;
-  justify-content: space-between;
-}
-
-.vp-page-meta {
-  cursor: default;
-
-  .vp-meta-item {
-    flex-grow: unset;
-  }
-
-  .last-updated .meta-item-info,
-  .contributors .meta-item-info {
-    color: var(--vp-c-grey-text);
-  }
-}
-
 .vp-page {
   min-height: calc(100vh - 2rem - var(--header-offset));
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 2rem;
+  padding-bottom: 0 !important;
 
   > * {
     padding: 0 !important;
@@ -59,6 +48,10 @@ div[class*="language-"].line-numbers-mode .line-number::before {
     @media (max-width: 719px) {
       width: calc(100vw - 2rem * 2);
     }
+  }
+
+  > :last-child {
+    margin-bottom: 2rem;
   }
 
   .vp-page-nav {
@@ -80,6 +73,23 @@ div[class*="language-"].line-numbers-mode .line-number::before {
     .link {
       padding: 10px 2px;
     }
+  }
+}
+
+.vp-page-meta {
+  cursor: default;
+
+  &:not(:last-child) {
+    padding-bottom: 1rem !important;
+  }
+
+  .vp-meta-item {
+    flex-grow: unset;
+  }
+
+  .last-updated .meta-item-info,
+  .contributors .meta-item-info {
+    color: var(--vp-c-grey-text);
   }
 }
 
