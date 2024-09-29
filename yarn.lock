@@ -1076,7 +1076,7 @@
   dependencies:
     "@vuepress/helper" "2.0.0-rc.47"
 
-"@vuepress/plugin-sitemap@2.0.0-rc.47":
+"@vuepress/plugin-sitemap@2.0.0-rc.47", "@vuepress/plugin-sitemap@^2.0.0-rc.47":
   version "2.0.0-rc.47"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-sitemap/-/plugin-sitemap-2.0.0-rc.47.tgz#72f4fd477633f38f878d60fa8b732dd81cde8b9b"
   integrity sha512-iO0zvX9YyDQqKd9l8B/9xM3jKH6yxmK0Rlc/6ICubsqOfYutv3rEwgzWS5Sddd0eCL8a8u4jfY7TZyjDbdihnQ==

@@ -3,6 +3,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 
 import sidebar from "./sidebar";
+import { sitemapPlugin } from "@vuepress/plugin-sitemap";
 
 export default defineUserConfig({
   base: process.env.BASE_URL as "/" | `/${string}/`,
@@ -35,4 +36,9 @@ export default defineUserConfig({
     contributorsText: "貢獻者",
     lastUpdatedText: "更新日期",
   }),
+  plugins: [
+    sitemapPlugin({
+      hostname: process.env.HOSTNAME ?? "",
+    }),
+  ],
 });
