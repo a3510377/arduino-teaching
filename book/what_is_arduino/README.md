@@ -27,8 +27,8 @@ Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開
 
 ::: details 腳位說明及外觀
 <br />
-<img src="./images/what_is_arduino/arduino_uno.png" width="600" alt="Arduino Uno">
-<img src="./images/what_is_arduino/arduino_uno_pins.png" width="600" alt="Arduino Uno Pins">
+<img src="../images/what_is_arduino/arduino_uno.png" width="600" alt="Arduino Uno">
+<img src="../images/what_is_arduino/arduino_uno_pins.png" width="600" alt="Arduino Uno Pins">
 :::
 
 ### [Arduino Nano Every](https://store.arduino.cc/products/arduino-nano-every)
@@ -45,8 +45,8 @@ Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開
 
 ::: details 腳位說明及外觀
 <br />
-<img src="./images/what_is_arduino/arduino_nano.png" width="600" alt="Arduino Nano Every">
-<img src="./images/what_is_arduino/arduino_nano_pins.png" width="600" alt="Arduino Nano Every Pins">
+<img src="../images/what_is_arduino/arduino_nano.png" width="600" alt="Arduino Nano Every">
+<img src="../images/what_is_arduino/arduino_nano_pins.png" width="600" alt="Arduino Nano Every Pins">
 :::
 
 ### [Arduino Mega 2560](https://store.arduino.cc/products/arduino-mega-2560-rev3)
@@ -64,8 +64,8 @@ Arduino 的開發板非常多，除了官方的，還有不少副廠設計的開
 
 ::: details 腳位說明及外觀
 <br />
-<img src="./images/what_is_arduino/arduino_mega_2560.png" width="600" alt="Arduino Mega 2560">
-<img src="./images/what_is_arduino/arduino_mega_2560_pins.png" width="600" alt="Arduino Mega 2560 Pins">
+<img src="../images/what_is_arduino/arduino_mega_2560.png" width="600" alt="Arduino Mega 2560">
+<img src="../images/what_is_arduino/arduino_mega_2560_pins.png" width="600" alt="Arduino Mega 2560 Pins">
 :::
 
 ## 正版 & 副廠

@@ -1,35 +1,89 @@
-:root {
-  --code-ln-wrapper-width: 2.5rem;
-}
-
 // ::: details
-.custom-container.details {
-  padding: 1em 1.2em;
-  --navbar-height: 3px;
-}
-
-// `>`
-blockquote {
-  ul,
-  ol {
-    margin: 0;
+.hint-container.details {
+  h4 {
+    padding: 0;
+    padding-top: 1rem;
   }
-}
 
-// `-` or `1.`
-ul,
-ol {
-  margin: 10px 0 5px;
-}
+  &[open] > summary {
+    padding-bottom: 0;
 
-// `code`
-code {
-  padding: 0.25rem 0.4rem;
+    &::after,
+    &::before {
+      top: 50%;
+    }
+  }
+
+  > ol:last-child,
+  > ul:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // `codes`
-div[class*="language-"].line-numbers-mode .line-numbers .line-number {
-  &::before {
-    margin-right: -15px;
+div[class*="language-"].line-numbers-mode .line-number::before {
+  margin-right: -15px;
+}
+
+.vp-meta-item.git-info {
+  width: 100%;
+  display: flex;
+  color: #8b9eb0;
+  font-weight: 500;
+  justify-content: space-between;
+}
+
+.vp-page-meta {
+  cursor: default;
+
+  .vp-meta-item {
+    flex-grow: unset;
   }
+
+  .last-updated .meta-item-info,
+  .contributors .meta-item-info {
+    color: var(--vp-c-grey-text);
+  }
+}
+
+.vp-page {
+  min-height: calc(100vh - 2rem - var(--header-offset));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2rem;
+
+  > * {
+    padding: 0 !important;
+    width: calc(100vw - var(--sidebar-width) - 2rem * 2);
+
+    @media (max-width: 719px) {
+      width: calc(100vw - 2rem * 2);
+    }
+  }
+
+  .vp-page-nav {
+    padding-top: 1rem !important;
+
+    .route-link {
+      padding: 0.5rem 1.5rem;
+    }
+
+    .hint {
+      display: flex;
+      align-items: center;
+
+      .arrow {
+        margin-right: 5px;
+      }
+    }
+
+    .link {
+      padding: 10px 2px;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  --vp-c-gutter: #5f5b5b;
 }

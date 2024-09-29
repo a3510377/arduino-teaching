@@ -14,11 +14,14 @@
   "devDependencies": {
     "@babel/core": "^7.22.17",
     "@babel/eslint-parser": "^7.22.15",
+    "@vuepress/bundler-vite": "^2.0.0-rc.15",
+    "@vuepress/theme-default": "^2.0.0-rc.49",
     "eslint": "^8.49.0",
     "eslint-config-sora": "^3.1.0",
     "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-vue": "^9.17.0",
-    "vuepress-vite": "2.0.0-beta.67"
+    "sass-embedded": "^1.79.4",
+    "vuepress": "^2.0.0-rc.15"
   },
   "dependencies": {}
 }

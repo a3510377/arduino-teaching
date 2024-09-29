@@ -1,14 +1,14 @@
-import { SidebarConfig } from "vuepress-vite";
+import { SidebarOptions } from "@vuepress/theme-default";
 
 export default {
   "/": [
     {
       text: "概述",
-      children: ["/what_is_arduino.md", "/setup.md"],
+      children: ["/what_is_arduino/README.md", "/setup/README.md"],
     },
     {
       text: "創建你的 Arduino",
-      children: ["/creating-your-arduino"],
+      children: ["/creating-your-arduino/README.md"],
     },
   ],
-} as SidebarConfig;
+} as SidebarOptions;

@@ -1,4 +1,6 @@
-import { defaultTheme, defineUserConfig } from "vuepress-vite";
+import { defaultTheme } from "@vuepress/theme-default";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { defineUserConfig } from "vuepress";
 
 import sidebar from "./sidebar";
 
@@ -27,5 +29,10 @@ export default defineUserConfig({
     ["meta", { property: "og:url", content: "" }],
     ["meta", { property: "og:locale", content: "zh_TW" }],
   ],
-  theme: defaultTheme({ sidebar }),
+  bundler: viteBundler(),
+  theme: defaultTheme({
+    sidebar,
+    contributorsText: "貢獻者",
+    lastUpdatedText: "更新日期",
+  }),
 });

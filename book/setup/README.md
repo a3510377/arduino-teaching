@@ -8,7 +8,7 @@
 
 Arduino 官方有出自己的 IDEA 提供給使用者使用，[下載連結](https://www.arduino.cc/en/software)。我們點開後往下滑可以看到 `Arduino IDE 某某某版本`，我推薦下載 2.x.x 以上版本，如果你不太熟悉 Arduino 所提供的函數或是記性不太好的可以在這個版本中使用自動補全，可以大大的加速程式的開發時間。
 
-![Arduino Downloads](images/setup/arduino_downloads.png)
+![Arduino Downloads](../images/setup/arduino_downloads.png)
 
 ## 如何安裝副廠驅動
 
@@ -16,15 +16,15 @@ Arduino 官方有出自己的 IDEA 提供給使用者使用，[下載連結](htt
 
 CH340 是絕大多數副廠所使用的 IC，故我們需要安裝 CH340 的驅動打開[官網](https://www.wch.cn/products/CH340.html)往下滑就可以看到 `开发资料` 裡的驅動程式，打開你對應的版本我所使用的 windows 系統故安裝 CH341SER.EXE (直接點擊藍標即可)。
 
-![CH340 info](images/setup/ch430_info.png)
+![CH340 info](../images/setup/ch430_info.png)
 
 點擊`下载`，下載完畢後開啟
 
-![CH340 Download](images/setup/ch340_download.png)
+![CH340 Download](../images/setup/ch340_download.png)
 
 點擊 `Install` 等他跑完就可已關掉了
 
-![CH340 Install](images/setup/ch340_install.png)
+![CH340 Install](../images/setup/ch340_install.png)
 
 ---
 
